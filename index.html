@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Encuesta Interactiva con Resultados en Tiempo Real </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <form id="formulario">
+        <table>
+            <caption>
+                <h1>¿Cuál es tu lenguaje de programación favorito?</h1>
+            </caption>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="radio" value="JavaScript" name="accion" checked>JavaScript
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" value="Python" name="accion" checked>Python
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" value="C++" name="accion" checked>C++
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" value="Otro" name="accion" checked>Otro
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Enviar" id="boton"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <h3>Resultados:</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Opción</th>
+                <th>Votos</th>
+                <th>Porcentaje</th>
+            </tr>
+        </thead>
+        <tbody id="resultados">
+            <!-- Aquí se mostrarán los resultados -->
+        </tbody>
+    </table>
+    <style>
+        td {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+    <script src="prueba.js"></script>
+</body>
+
+</html>
